@@ -107,7 +107,7 @@ line-height: 1.3;
 
 .hero-sec {
     padding: 197px 0;
-    background-image: url(/genius/Пекарня/imagies/main-backgroond.jpg);
+    background-image: url(/modern-bakery/imagies/main-backgroond.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size:cover ;
@@ -197,16 +197,12 @@ max-width: 710px;
 .formats-list {
     display: flex;
     gap: 20px;
-       
+      
 }
 .format-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 16px;
-}
-
-.format-item {
-    
 }
 
 .formats-title{
@@ -217,6 +213,11 @@ max-width: 710px;
     border: 1px solid #819B57;
     border-radius: 16px;
     padding: 24px;
+    height: 444px;
+    width: 349px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+
+    ;
 }
 /* Contact */
 .cont-accent {
@@ -237,4 +238,11 @@ max-width: 710px;
 }
 .addres-cr {
     font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+    background-image: url(/modern-bakery/imagies/footer-back.png);
+    background-color: var(--color-primery-dark);
 }
