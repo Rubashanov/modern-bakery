@@ -8,7 +8,9 @@
 
 }
 
-*{
+*, 
+*::after
+*::before{
     box-sizing: border-box;
 }
 
@@ -33,6 +35,10 @@ address{
 
 h1, h2, h3, h4, h5, h6, p {
 margin-top: 0px;
+}
+
+a {
+    display: inline-block;
 }
 
 .container {
@@ -114,10 +120,10 @@ line-height: 1.3;
 
 .hero-sec {
     padding: 197px 0;
-    background-image: url(/modern-bakery/imagies/main-backgroond.jpg);
+    background-image: url(../imagies/main-background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size:cover ;
+    background-size:cover;
 }
 
 .hero-title {
@@ -196,33 +202,67 @@ max-width: 710px;
     margin-bottom: 16px;
 }
 
-.chefs-title {
-    margin:0 auto 80px;
-    max-width: 532px;
-    }
-
-.chef-photo{
-    border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-primery-normal),-16px 16px 0 2px var(--color-secondery-dark);
-}
 .chefs-title::before{
     display: block;
     width: 352px;
-    border: 2px solid var(--color-primery-normal);
+    border: 2px solid var(--color-brand-light);
     content: '';
+    position: absolute;
+    bottom: 24px;
+    left: 0px;
 }
 .chefs-title::after{
     display: block;
     width: 352px;
-    border: 2px solid var(--color-primery-normal);
+    border: 2px solid var(--color-brand-light);
     content: '';
+    position: absolute;
+    bottom: 24px;
+    right: 0px;
 }
+
+.chefs-title {
+    position: relative;
+    margin:0 auto 80px;
+   
+    }
+
+.chef-list {
+    display: flex;
+   gap: 40px 30px;
+   flex-wrap: wrap;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
+}
+.chef-item {
+flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+display: flex;
+gap: 30px;
+}
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primery-normal),-16px 16px 0 2px var(--color-secondery-dark);
+}
+
 /* Format */
 
 .formats-list {
     display: flex;
     gap: 20px;
+    justify-content: space-between;
       
+}
+.format-item {
+    flex-basis: calc((100% - 40px) / 3);
 }
 .format-title {
     font-size: 24px;
@@ -233,24 +273,62 @@ max-width: 710px;
 .formats-title{
     margin-bottom: 80px
 }
-
+.format-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
 .format-card {
     border: 1px solid #819B57;
     border-radius: 16px;
     padding: 24px;
     height: 444px;
-    width: 349px;
+   
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
-
-    ;
 }
+
+/* Slider */
+.slider-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primery-dark);
+    padding: 0;
+    fill: var(--color-primery-dark);
+}
+
+.slider-buttom:hover {
+    background-color: var(--color-primery-dark);
+    fill: var(--color-primery-normal);
+}
+
+
 /* Contact */
 .cont-accent {
     color: var(--color-brand-dark);
 }
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
 
+.contacts-sec {
+    padding-bottom: 96px;
+}
+
+.contact-map{
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
 .contact-title{
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    font-size: 62px;
 }
 .addres-link {
     font-size: 16px;
@@ -264,10 +342,74 @@ max-width: 710px;
 .addres-cr {
     font-size: 14px;
 }
+.addres-icon {
+    fill: var(--color-primery-normal);
+}
+
+.addres-icon:hover {
+    fill: var(--color-brand-dark);
+}
 
 /* Footer */
 
 .footer {
-    background-image: url(/modern-bakery/imagies/footer-back.png);
+    padding: 32px 0;
+    background-image: url(../imagies/footer-back.png);
     background-color: var(--color-primery-dark);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::before {
+    position: absolute;
+    content: '';
+    background-image: url(../imagies/decor-bread1.png);
+    width: 180px;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.footer::after {
+    position: absolute;
+    content: '';
+    background-image: url(../imagies/decor-bread2.png);
+    width: 380px;
+        height: 190px;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+}
+
+.footer-container{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav {
+    flex-basis: 50%;
+    display: flex ;
+    gap: 20px;
+}
+.footer-ad {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex-grow: 1;
+}
+
+.footer-menu {
+    flex-grow: 1;
+}
+.addres-list {
+    flex-grow: 1;
+}
+.addres-info {
+    flex-grow: 1;
 }
