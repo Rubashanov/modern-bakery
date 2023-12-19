@@ -413,3 +413,38 @@ gap: 30px;
 .addres-info {
     flex-grow: 1;
 }
+
+/* Modal */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primery-normal);
+    border-radius: 32px;
+    
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.backdrop.is-hidden  {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
