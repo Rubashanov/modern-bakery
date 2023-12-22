@@ -72,6 +72,13 @@ line-height: 1.3;
 
 /* Header */
 
+.header {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+}
+
 .button {
     padding: 16px 32px;
     color: var(--color-primery-normal);
@@ -80,6 +87,7 @@ line-height: 1.3;
     background: var(--color-brand);
     cursor: pointer;
     font-weight: 600;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .button:hover {
@@ -90,6 +98,7 @@ line-height: 1.3;
 .link {
     color: var(--color-primery-normal);
     text-decoration: none;
+    transition: color 0.3s;
 
 }
 
@@ -120,7 +129,7 @@ line-height: 1.3;
 
 .hero-sec {
     padding: 197px 0;
-    background-image: url(../imagies/main-background.jpg);
+    background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url(../imagies/main-background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size:cover;
@@ -283,8 +292,12 @@ gap: 30px;
     border-radius: 16px;
     padding: 24px;
     height: 444px;
-   
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+    transition: transform .3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
 }
 
 /* Slider */
@@ -307,6 +320,9 @@ gap: 30px;
     fill: var(--color-primery-normal);
 }
 
+.next {
+    transform: rotate(180deg);
+}
 
 /* Contact */
 .cont-accent {
@@ -426,12 +442,16 @@ gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
     position: relative;
-    width: 880px;
-    height: 880px;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
     background-color: var(--color-primery-normal);
     border-radius: 32px;
     
@@ -448,3 +468,4 @@ gap: 30px;
     visibility: hidden;
     pointer-events: none;
 }
+/* Form */
