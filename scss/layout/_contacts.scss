@@ -1,0 +1,51 @@
+.cont-accent {
+    color: var(--color-brand-dark);
+}
+
+.contact-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.contacts-sec {
+    padding-bottom: 96px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    height: 595px;
+
+}
+
+.contact-title {
+    margin-bottom: 16px;
+    font-size: 62px;
+}
+
+.addres-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primery-normal);
+    text-decoration: none;
+}
+
+.addres-link:hover {
+    color: var(--color-brand-dark)
+}
+
+.addres-cr {
+    font-size: 14px;
+}
+
+.addres-icon {
+    fill: var(--color-primery-normal);
+}
+
+.addres-icon:hover {
+    fill: var(--color-brand-dark);
+}

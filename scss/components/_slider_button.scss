@@ -1,0 +1,22 @@
+.slider-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primery-dark);
+    padding: 0;
+    fill: var(--color-primery-dark);
+}
+
+.slider-buttom:hover {
+    background-color: var(--color-primery-dark);
+    fill: var(--color-primery-normal);
+}
+
+.next {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,39 @@
+.formats-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.format-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.formats-title {
+    margin-bottom: 80px
+}
+
+.format-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.format-card {
+    border: 1px solid #819B57;
+    border-radius: 16px;
+    padding: 24px;
+    height: 444px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+    transition: transform .3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+}

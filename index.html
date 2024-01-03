@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -67,8 +61,11 @@
               </p>
               <p class="text-traditions limited">
                 Ми працюємо як найвідоміші мережі —
-                <span class="accent"> 5 хвилин і замовлення готове.</span> А ще
-                у наших пекарень стильний дизайн та висока якість
+                <span class="accent"
+                  ><br />
+                  5 хвилин і замовлення готове.</span
+                ><br />
+                А ще у наших пекарень стильний дизайн та висока якість
                 обслуговування!
               </p>
             </div>
@@ -309,12 +306,14 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button"></button>
         <h2 class="modal-h2">Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <p class="modal-text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form class="form" name="modal-form" autocomplete="off" novalidate>
           <div class="form-field">
             <label class="form-label hidden" for="user-name">Ім'я</label>
             <input
