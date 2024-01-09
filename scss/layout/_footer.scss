@@ -62,3 +62,26 @@
 .addres-info {
     flex-grow: 1;
 }
+
+.addres-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primery-normal);
+    text-decoration: none;
+}
+
+.addres-link:hover {
+    color: var(--color-brand-dark)
+}
+
+.addres-cr {
+    font-size: 14px;
+}
+
+.addres-icon {
+    fill: var(--color-primery-normal);
+}
+
+.addres-icon:hover {
+    fill: var(--color-brand-dark);
+}

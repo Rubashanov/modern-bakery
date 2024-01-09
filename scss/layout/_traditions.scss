@@ -1,32 +1,25 @@
-.tradition-container {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-.tradition-title {
-    margin-bottom: 42px;
-}
-
-.traditions_sec {
+.traditions-sec {
     padding-top: 96px;
+
+    &__container {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+    &__title {
+        margin-bottom: 42px;
+        }
+    &__content {
+         max-width: 710px;
+        }
+     &__text{
+        &--limited {
+                max-width: 350px;
+            }
+     }
 }
 
-.text-traditions .accent {
-    color: var(--color-brand);
-    font-weight: 600;
-}
 
-.text-traditions .accent-up {
-    text-transform: uppercase;
-    color: var(--color-brand);
-    font-weight: 600;
-}
 
-.text-traditions.limited {
-    max-width: 350px;
-}
 
-.tradition-content {
-    max-width: 710px;
-}

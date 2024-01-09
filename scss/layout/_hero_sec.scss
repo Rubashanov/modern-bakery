@@ -4,17 +4,16 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+
+    &__title {
+            color: var(--color-primery-normal);
+            text-align: center;
+            font-size: 128px;
+            font-weight: 900;
+            margin-bottom: 0px;
+    
+        }
 }
 
-.hero-title {
-    color: var(--color-primery-normal);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
-    margin-bottom: 0px;
 
-}
 
-.hero-title .accent {
-    color: var(--color-brand);
-}
