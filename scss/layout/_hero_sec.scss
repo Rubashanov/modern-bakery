@@ -8,12 +8,14 @@
     &__title {
             color: var(--color-primery-normal);
             text-align: center;
-            font-size: 128px;
+            font-size: 67px;
+            line-height: 1;
             font-weight: 900;
             margin-bottom: 0px;
 
-            @media screen and (min-width: ) {
-                
+            @media screen and (min-width: $bp-tablet) {
+                font-size: 128px;
+                line-height: 1.5;
             }
     
         }
