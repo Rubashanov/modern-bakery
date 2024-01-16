@@ -8,6 +8,10 @@
     @media screen and (min-width: $bp-desctop) {
             padding: 272px 0;
     }
+
+    @media screen and (min-device-pixel-ratio:2), (min-resolution: 192dpi),(min-resolution: 2dppx) {
+        background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url(../imagies/main-background@2x.jpg);
+    }
     &__title {
             color: var(--color-primery-normal);
             text-align: center;
