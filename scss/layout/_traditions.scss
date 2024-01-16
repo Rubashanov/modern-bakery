@@ -1,14 +1,22 @@
 .traditions-sec {
-    padding-top: 96px;
+    padding-top: 40px;
+    @media screen and (min-width: $bp-tablet) {
+            padding-top: 96px;
+        }
 
     &__container {
             display: flex;
             gap: 40px;
             justify-content: space-between;
+            align-items: flex-start;
         }
 
     &__title {
         margin-bottom: 42px;
+        @media screen and (min-width: $bp-tablet) {
+                font-size: 18px;
+                font-weight: 400;
+            }
         }
     &__content {
          max-width: 710px;
@@ -16,6 +24,14 @@
      &__text{
         &--limited {
                 max-width: 350px;
+            }
+     }
+
+     &__img {
+        border-radius: 400px 400px 0 0;
+        display: none;
+        @media screen and (min-width: $bp-desctop) {
+                display: block;
             }
      }
 }
