@@ -1,18 +1,16 @@
 .format-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     position: relative;
-    border: 1px solid #819B57;
-    border-radius: 16px;
-    padding: 24px;
-    height: 444px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 444px;
+        padding: 24px;
+        border-radius: 16px;
+        overflow: hidden;
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
-    transition: transform .3s;
 
-    &:hover {
-            transform: scale(1.05);
-            }
+     
+        
     
         &__img {
             position: absolute;
@@ -21,6 +19,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
+            object-fit: cover;
         }
 
         &__title {
