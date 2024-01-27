@@ -16,6 +16,8 @@
             visibility: hidden;
             pointer-events: none;
         }
+               
+                
 }
 
 .modal {
@@ -30,13 +32,16 @@
     overflow-y: auto;
 
     @media screen and (min-width: $bp-tablet) {
-    padding: 128px;
+    padding:  64px 128px;
     }
 
     &__btn-close {
             position: absolute;
             top: 40px;
             right: 40px;
+            border: none;
+            background-color: transparent;
+            fill: var(--color-brand-dark);
         }
 
                 &__title {
@@ -49,19 +54,31 @@
 
         &__text {
             text-align: center;
-            margin-bottom: 72px;
+            margin-bottom: 48px;
             font-size: 18px;
             font-weight: 400;
         }
 
         &__form-field {
-            margin-bottom: 32px;
+            margin: 10px 10px 32px;
         }
 
                 &__button {
                    margin: 0 auto 16px;
                 }
-}
+
+                                 &::after {
+                                     position: absolute;
+                                     content: '';
+                                     background-image: url(../imagies/decor-bread3.png);
+                                    width: 190px;
+                                    height: 243px;
+                                     bottom: 0;
+                                     right: 0;
+                                     background-repeat: no-repeat;
+                                 }
+            }
+                
 
 
 

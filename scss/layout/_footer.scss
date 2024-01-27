@@ -20,6 +20,7 @@
                     
                 }
         }
+
         &__ad,
         &__nav {
             text-align: center;
@@ -33,7 +34,10 @@
                     text-align: left;
                 }
         }
-    
+        
+                &__ad {
+                    gap: 160px;
+                }
         
         &__logo {
             flex-grow: 1;
@@ -91,6 +95,10 @@
             
                      &__addres-icon:hover {
                             fill: var(--color-brand-dark);
+                        }
+
+                        &__addres-cr {
+                            color: var(--color-secondery-dark);
                         }
 }
 
